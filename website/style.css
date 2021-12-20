@@ -1,0 +1,175 @@
+            /* NOTE: I am writing my notes within my CSS code retrospecively, therefore I may not be able to provide full details for my choices and decisions
+                    when styling my website.*/
+
+body {
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,5,101,1) 23%, rgba(255,98,183,1) 100%);
+  background-color:#436bb0;
+}
+            /* NOTE: Initially, for my website I wanted to have a background colour that was a bit more of a pastel colour than the basic colours. Therefore I used an
+                    online CSS colour picker in order to pick an appropriate hexadecimal colour code to use for my websites colour scheme.   */
+            /* NOTE: To aid my decision making process when it came to the the colour scheme I used Colorswall.com and looked at their recommended colour pallet for
+                    guardians of the galaxy movie posters. This was helpful as they provided the hexadecimal values on the website.*/
+
+
+h1 {
+            /* NOTE: In the event that a browser is unable to load the logo that I'm using as the title of my website I wanted to change the styling of my h1 tag.
+                    I used the h1 tags on my website to change the alt text to be styled in a way that I want.*/
+  color: #ffad33;
+            /* NOTE: I chose this colour for the title of my website as it bares some resemblence to the colour of the guardians of the galaxy logo. */
+  text-align: center;
+            /* NOTE: Much like the image I used for the website title, I wanted the alt text to be central as it sets it appart from the other elements on the webpage.
+                    centering the title also helps to emphasize it.*/
+  font-family: fantasy; copperplate;
+            /* NOTE: In an attempt to mimic the style of the guardians of the galaxy logo I wanted to change my font style for my alt text to something similar.
+                    I chose to use fantasy, copperplate as it is a fairly web safe font, however it is worth noting that no fonts are 100% websafe. Meaning not all
+                    fonts are installed in web browsers. And no font is garuntted to be available on all web browsers. */
+  font-size: 60px;
+            /* NOTE: I chose to change the font size of the alt text to be 60px as it will then be a similar height to the logo used. This adds emphasis to the ability
+                    text and makes it stand out fromn the other elements on the webpage's*/
+  text-shadow: 1px 1px 2px #333;
+            /* NOTE: Throughout my website I'm using subtle drop shadows to emphasise things and make them stand out from the background and to create a more 3D "floating"
+                    effect.*/
+}
+
+
+h2 {
+            /* NOTE: Throughout the website I wanted to use the h2 tag to ensure all of my section headders looked identical. having identicle headers makes the website
+                    appear more polished and professional to the viewwers. By changing the heading attributes in css I'm less likely to forget styling effects if I chose
+                    style the headdings induvidually*/
+  font-size: 40px;
+            /* NOTE: I wanted my h2 to be larger than the sub headders so I chose font size 40px*/
+  color: white;
+            /* NOTE: initiallly the text was black, this wasn't ideal with the colours behid the text as it became hard to read, therefore I altered the text colour
+                    to be white. */
+  text-align: center;
+            /* NOTE: In order to emphasise the section headdings I wanted them centred. */
+  font-family: sans-serif;
+            /* NOTE: In order for my text to be easily readable I chose the sans serif font family.   */
+  text-shadow: 1px 1px 2px #333;
+            /* NOTE: In order to emphasise the section headers further I wanted to add a dropshadow to the text. I specified the dimensions and the colour of the dropshadow.  */
+}
+
+
+h3{
+  font-size: 30px;
+            /* NOTE: The sub headings should be smaller than the section headders but larger than their supporting bodies of text. */
+  font-family: sans-serif;
+            /* NOTE: the same styling is used throughout my website headers to give a look of continuity. Hence the same fonts */
+  text-shadow: 1px 1px 2px #333;
+            /* NOTE: I did this to make the h3 consistent with the other headders. */
+}
+
+a{
+  text-decoration:none;
+            /* NOTE: Initially the links were Blue and underlined. I didn't think this suited the website so my first step was to remove the "text decoration" */
+  font-weight: bold;
+            /* NOTE: Since I removed the text decoration, I wanted the page links to stand out in a different way. */
+  font-family: monospace;
+            /* NOTE: Monospace is a minimalistic font family, easy to read at all sizes and is a stylistic chice for my website as its based of a sci-fi film. */
+  color: white;
+            /* NOTE: After the text decoration was removed the font colour defaulted to black. This wasnt ideal for reading on the colour of background. Therefore, I
+                  changed the colour to white. Also, I'm not a fan of having to use the american spelling :) */
+  font-size: 20px;
+}
+
+p{
+  font-family: sans-serif;
+            /* NOTE:  */
+  font-size: 20px;
+}
+
+a:hover{
+  text-decoration:underline;
+            /* NOTE: In an attempt to make the links stand out as links to the viewwer I added the underline upon hovering over the link. */
+}
+
+img {
+  border: 10px solid  #4c344c;
+  background-color:	#4c344c;
+            /* NOTE: Originally my images on the cast page were overlapping the text box and it looked a bit pants, this was my inital solution until I discoverd
+                  Flex box models. It's a usless line of code now however I left it in to show how my website has developed. */
+}
+
+footer{
+  text-align: center;
+            /* NOTE: Since everything else in my website is centered it was a stylistic choice to center my footer. */
+  font-family: sans-serif;
+  text-shadow: 1px 1px 2px #333;
+  color: white;
+            /* NOTE: This stlying is intended to mach that of the rest of my website. */
+}
+
+audio{
+  filter: drop-shadow(1px 1px 2px #333);
+  width: 80%;
+          /* NOTE: Originally the audio player was short and looked out of place, so I wanted it to span the page next to the image. this will also help fit the breif. */
+}
+
+.smalltext{
+  font-size: 12px;
+          /* NOTE: I wanted the text to be smaller to separate it from the rest of the text body. only shinking it by 1px or so will not make the diffreciation apparent
+                   however I still wanted it to be readable. Therefore I went for twelve px as any smaller, the legability suffers. */
+  text-align: center;
+          /* NOTE: In the events where this secondary text was present it was a stylistic choice to center it. */
+  font-style: italic;
+          /* NOTE: Again I'm working with the font styling to diffrenciate the small text from the larger bodies of text. */
+}
+
+
+.textbox {
+  border: 5px 	#4c344c solid;
+  background-color: 	#4c344c;
+  padding: 10px 20px;
+  margin: 30px;
+  box-shadow: 4px 3px 8px 1px #4c344c;
+  color: white;
+          /* NOTE: I wanted all my text to appear in consistent textboxes all around the website. I specified the border width and colour, I wanted the background to be filled
+                    with the same colour.
+
+                    *The colour was chosen based of the guardians of the galaxy movie colour scheme chart.
+
+                    I used padding above below and to the sides of the box to avoid content from touching the edge. Then I added a margin to space the textboxes from eachother
+                    and from the sides of the webpage.
+
+                    I added a subtle box shadow to give the text boxes some more separation from the background. making sure the dimensions of the box shadow are the same for all
+                    textboxes ensures that it looks good as having box shadows of shifferent shapes and sixes will look disjointed as though theres more than one light source.
+                    i used the hex colour wheel to find a dark red to use as the colour for the drop shadow.
+
+                    Finally I changed the text colour to white to contrast with the background colour. */
+}
+
+.header {
+  padding: 5px;
+  color: #ffad33;
+  text-align: center;
+  background:	#4c344c;
+  padding: 1px 5px;
+  margin: 30px;
+  box-shadow: 4px 3px 8px 1px #4c344c;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.container{
+            /* NOTE: I learned about flex box models a bit later into the development of my website however it solved the issues I was having with my cast page. */
+  display: flex;
+  flex-direction: column;
+            /* NOTE: This specifies the direction I wanted my content. I wanted it to be top to bottom so column was the appropriate choice for the cast sections. */
+  justify-content: space-between;
+            /* NOTE: Space between was the most appropriate way of laying out the content of my flex box model. some other styles i experimented with were:
+                    -flex-start
+                    -flex-end
+                    -center
+                    -space-around
+                    -space-evenly */
+  padding-right: 40px;
+  padding-left: 40px;
+            /* NOTE: I didn't want my cast list to have same width as the rest of the content on my website therfore I added larger padding to the flex box by comparrison to
+                    the div class text box */
+}
+
+.Menu{
+  text-align: center;
+  padding-bottom: 5px;
+            /* NOTE: Could of probably done this under nav rather than making a new div class. */
+}

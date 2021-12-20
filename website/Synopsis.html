@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="style.css">
+    <title>GUARDIANS OF THE GALAXY</title>
+            <!-- NOTE: Same as the othe page I set the title to be the title of the website. -->
+  </head>
+
+  <body>
+
+<div  class="header">
+            <!-- NOTE: Using the same div class as the othe page(s) on your website will ensure consistency. furthermore, doing this will allow you to make changes to the
+                      website as a whole solely by changing the code in the css style sheet. -->
+<h1>
+<img height=190px; src="IMAGE\gog logo reworked.png" alt="GUARDIANS OF THE GALAXY">
+            <!-- NOTE: I Set the height too 130px as the original image was way to big for the headder and looked out of place. -->
+</h1>
+
+
+<div class="Menu">
+<nav>
+<a href="Synopsis.html">SYNOPSIS</a>
+&nbsp&nbsp
+            <!-- NOTE: Like on the other page I used "&nbsp" twice to space out my menu eliments, ensuring consistency within the website. -->
+<a href="Cast.html">CAST</a>
+            <!-- NOTE: In html the "a" tag is used to create hyperlinks to web pages, files, email addresses, locations in the same page and in this case to link to
+                      another page within my website -->
+</nav>
+            <!-- NOTE: I used the "Nav" tags to show that this section of code is for navigational links. -->
+</div>
+</div>
+
+<div class="textbox">
+<h2>SYNOPSIS</h2>
+            <!-- NOTE: Like all the other section tiles through out my website I use the "H2" styling for the text. -->
+
+<p>
+Abducted from his home planet at the young age, Peter Quill (Chris Pratt) grew up amongst ravergers, an interstellar clan of smugglers, theives, bounty hunters and pirates.
+26 years on, Peter steals a mysterious orb which lands him with a jaw dropping bounty on his head leaving him on the run from by bounty hunters and his ravager clan. To add to his plate,
+a blood-thirsty kree extreemist called Ronan the Accuser is stopping at nothing to get his hands on this orb. Not to mention the ravagers and the nova corps are all competing to apprehend
+the self proclaimed "Star Lord."</p>
+<p>
+The end result? Peter's unlikely alliance with a genetically modified racoon bounty hunter, a renowned and hated assasin, an articulate yet very litteral alien who is obsessed with killing
+Ronan the Accuser and did I mention a (sort of) talking tree, united in an attempt to save the galaxy. To top this off there is a fantastic mixtape soundtracking the whole film, copious
+amounts of humour and a fantastic fight scene. What better way to spend 2 hours of your life?
+</p>
+            <!-- NOTE: I hated doing this part. I had to fill the website with content. In my experience of website design, clients would send the content to be copied
+                      and pasted onto the site. However for this project I have no client to send me content for the website. Furthermore I mustn't copy and paste an
+                      already completed synopsis from another webpage on the internet as that is considered an act of plagiarism.-->
+            <!-- NOTE: as you can tell, synopsis writing is not my strong suit -->
+</div>
+
+<div class="textbox">
+            <!-- NOTE: To remain consistent with the rest of the website I am separating the different sections by giving them a background box. -->
+<h2>TRAILER</h2>
+            <!-- NOTE: By using the same tag for the title of every section, I can easily change the styling of all the section headings at once in my css style sheet.  -->
+<center>
+            <!-- NOTE: I used the "center" tag as I wanted the trailer to be placed centrally as by default videos are aligned to the left which I felt didn't suit the
+                      website -->
+<video controls width="90%"; poster="IMAGE\VIDEO THUMBNAIL.jpg">
+            <!-- NOTE: For the video I used the "controls" attribute to give the viewwer the ability to control the video, play pause ect. I set the width to 90%
+                      otherwise the video would span the entire width of the webpage which ifelt wasn't ideal for the aethtetic of the website. using % instead of px
+                      in this scenario is good as it will be look good aethtetically reguardles of the size of the browser window. Using ";" separates the different
+                      attributes that I'm applying to the video. Using the "poster" attribute I'm able to add a cover image, or thumbnail if you will, to the video.-->
+
+            <!-- NOTE: I created the video thumbnail in an image manipulation programme called "GIMP" I combined a background image I found on the internet with the
+                      logo I've already found and have been using for my website. the background is the same/similar size as the video trailer therfore ensuring that the
+                      video player wont change size upon playback and the thumbnail won't get distorted. using thumbnails are useful as you can make the video more
+                      appealing to click on than the first frame of the video.-->
+<source src="VIDEO\reworked mp4.mp4" type="video/mp4">
+            <!-- NOTE: The original video was 2 minutes and 30 seconds in length meaning the video was a hefty 18.5MB file. This wasn't ideal for my coursework as by the
+                      time I add the alternative videos, to increase optimisation for different browsers,there will be several large files that won't be ideal for the
+                      limited space github has for uploading projects.-->
+            <!-- NOTE: To solve this, I put the trailer in the editor and sped it up so the final video was 20 seconds long and was ony 2.27MB. I appreciate this wouldn't
+                      be the case in real world practice as the clients will want the full length and quaility video for their website.-->
+<source src="VIDEO\reworked.webm" type="video/webm">
+            <!-- NOTE: I have provided an alternative video so different browsers can choose their first recognised format. this means that the video is more likely to be
+                      playable on different browsers.-->
+  Your browser does not support this video.
+            <!-- NOTE: If the viewwer is using an outdated browser it's likely that certain video types will not be playable. In events like this no video can be played
+                      so I prvided an alt text to tell the viewwer that the video can't be played of their browser. The alt text is between the video tags meaning that
+                      it will only be displayed on browsers that don't support the video element.-->
+  </video>
+            <!-- NOTE: This signifies the end of the video tag. -->
+</center>
+            <!-- NOTE: This shows the end of the items which I wanted to be centered. -->
+</div>
+            <!-- NOTE: This was the end of my trailer section so I ended my div class text box here. -->
+  </body>
+
+<footer>
+  <p> Website By: P2606861 :) </p></footer>
+</html>

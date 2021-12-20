@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="style.css">
+        <!-- NOTE: Doing this allows the html document to know where to find the style sheet and the project path of the style sheet. -->
+    <title>GUARDIANS OF THE GALAXY</title>
+        <!-- NOTE: This is the title of the webpage. I named it "guardians of the galaxy" because that's what the website is about.  -->
+  </head>
+
+  <body>
+
+<div  class="header">
+        <!-- NOTE: I created a div class "header" so that I can customise the styling of this section on css therefore keeping my html sheets tidy.
+                  This also allows for consistency throughout the website.-->
+<h1>
+<img height=190px; src="IMAGE\gog logo reworked.png" alt="GUARDIANS OF THE GALAXY">
+</h1>
+        <!-- NOTE: Using H1 either side of the img will allow me to apply the css styling of H1 to the alt text of the image. This will allow the site
+                  to be aethtetic in situations that the header logo can't be loaded. -->
+
+<div class="Menu">
+        <!-- NOTE: I created a div class "menu" to be able to edit the styling of the menu section on my css page. An advantage of doing most of my
+                  styling in css is that it will increase the speed of wich the webpage loads. -->
+<nav>
+        <!-- NOTE: The nav tag defines the start of a navigational section on the website. -->
+<a href="Synopsis.html">SYNOPSIS</a>
+        <!-- NOTE: The A tag is for adding a link to your nav section. The href attribute tells the webpage where the link is linking to. -->
+&nbsp&nbsp
+        <!-- NOTE: Originaly the menu options were too close togethr and it felt cramped. I solved this by using "&nbsp" which adds a spacing between elements. -->
+<a href="Cast.html">CAST</a>
+</nav>
+</div>
+</div>
+        <!-- NOTE: I ended the both the header and the menu div here as I wanted the header class effects to be applied to the menu aswell -->
+
+<div class="textbox">
+        <!-- NOTE: By creating the "textbox" class I'm able to box around the different sections of the site in a consistent manner. This also makes the
+                  website easier to navigate as youre able to see where the different sections start and end. -->
+<h2>MEET THE CAST</h2>
+        <!-- NOTE: I use h2 for section titles across the site to ensure consistency. I  also capitalise all my title as the lettering in the logo is all
+                  Uppercase so it keeps the guardians of the galaxy theme throughout. I could develop this by downloading the font and producing the headings
+                  in photoshop and export them out as pngs. The disadvantage of doing this is the more images I use, the slowwer the website will load. Futhermore,
+                  png's might not be compatible on all websites and .jpgs ect don't allow transparent backgrounds hence making the website look les aethtetic. -->
+</div>
+
+
+<div class="container">
+<div class="textbox">
+        <!-- NOTE: I wanted each castmember to have thir own box to be placed in on the cast page so im putting each cast member in their own Div class
+                  "textbox" this is a stylistic choice but also keeps in theme with the project breif templates.-->
+
+
+  <img style="padding: 20px"; height=300px; src="IMAGE\chris pratt.jpg"; alt="Image of Chris Pratt"; align="left";>
+        <!-- NOTE: Originally when I added the image it filled up the page so I set the height to 300px. I used px instead of % to ensure consistency across
+                  the site as different images of different actors may have different resolutions resulting in images being different sises. Once I resized the
+                  image I found that I was only able to add text under it. To solve this I added the "alaign=left" attribute. I then felt that the text was too
+                  close to the image so I added the style="padding 20px" attribute. -->
+        <!-- NOTE: I realise now that when the browser gets resized for mobile ect the text will either wrapdown and past the image or it will not reach the base
+                  of the image for wider windows. This means that the image may on occasion overhang the text box background.-->
+        <!-- NOTE: To fix the image overhanging issue I have used a combination of css stying to the image and I used the div class="container"-->
+
+
+<h3>Chris Pratt</h3>
+        <!-- NOTE: For the cast member names I chose to use the H3 styling to ensure consistency on the site. Additionally if I nedd to make adaptations to the
+                  style of the actors names I can write less code by changinging the H3 atributes in the css style sheet. -->
+  <p><b>Year of Birth:</b> <br> 1979 </p>
+  <p><b>From:</b> <br>Virginia, Minnesota, US</p>
+  <p><b>Also Featured in:</b><br> Parks and Recreation, Jurassic World, Jurassic World: Fallen Kingdom, The Magnificent Seven, Passengers, Guardians of the Galaxy
+                                 Vol. 2, Avengers: Infinity War and Avengers: Endgame </p>
+        <!-- NOTE: For the cast I wanted to provide some basic information such as year of birth, where they're from and what they've also featured in. Initially
+                  I separated the different facts by putting Breaks <br> before and in between each line. It is much bettter practice to break up text by putting
+                  them In different paragraphs. Therefore, I recified this by putting each fact in separate paragraphs. This acheived the same effect, but with
+                  less lines of code, on this occcasion the speed of which the web page loads wouldn't be affected. however, for larger web pages it I is smart
+                  to use every method to keep the lines of code to a minimum. One occasion where breaks <br> are indeed useful is when writing adresses without
+                  line breaks.-->
+<audio controls>
+        <!-- NOTE: Using the <audio> tag defines the start of some code relating to audio. I then used the controls attribute to give the user control over the
+                  clip (play, pause, mute ect.)-->
+  <source src="AUDIO\chris_pratt_interview.mp3" type="audio/mp3">
+        <!-- NOTE: To fit the breif I needed to add audio clips for each castmember I downladed a video from youtube, I trimed it down to two minutes and exported
+                  the audio. I trimmed it down to two minutes to save space on filesizes when uploading the website to github. normally a client would expect
+                  the full video clip to be available on their website.-->
+  <source src="AUDIO\chris_pratt_interview.ogg" type="audio/ogg">
+        <!-- NOTE: I exported the video to different recognised audio formats to maximise compatability across a variety of browsers. This is because some
+                  outdated browsers may not recognise different audio formats.-->
+  <source src="AUDIO\chris_pratt_interview.wav" type="audio/wav">
+        <!-- NOTE: using the source tag defines where to look for the audio. Because the file is located within the website folders I used the project path to
+                  locate what audio clip to use. By using the type attribute, the browser knows what the audio format is and wether it's able to play it.-->
+    Your browser does not support this audio clip.
+        <!-- NOTE: Because this is placed within the audio tags this will act as alt text in situations where outdated browsers can't play the audio. -->
+</audio>
+        <!-- NOTE: Defines the end of the audio section -->
+
+<p class="smalltext">
+        <!-- NOTE: As part of the marking criteria we need to use at least one link to an external page, so I wanted to add a line of text that's styled
+                differently to other bodies of text. This is why I made the class "smalltext". This way I can edit the styling in css and reduce my lines of
+                code in my html pages when applying this styling on severaloccasions across different pages of my website.-->
+  To listen to the full clip,
+        <!-- NOTE: Because I trimmed the original clip down to two minutes I thought the viewwers may want to listen to the full clip. -->
+  <a href="https://www.youtube.com/watch?v=ETpiA8ych30" target="_blank" rel="noopener noreferrer">CLICK HERE</a></p>
+        <!-- NOTE: The <A> attribute tells the code that it's a link. Href attribute defines what link or path that youre linking to. Originaly when the link
+                gets clicked the website opens in the current tab. Because it's an external page I wanted the viewwer to open the page in in a new tab, making
+                it easier to get back to the website, increasing audience retention. Therefore I set the target to "_blank" to open the tab in a new page.
+                by using the rel attribute, I set my relationship to the url as "noopener noreferrer" which prevents potential melicious attacks from the
+                websites I'm linking to. -->
+</div>
+        <!-- NOTE: This denotes the end of the textbox.-->
+
+<div class="textbox">
+        <!-- NOTE: To keep consistentwith the rest of the website I put the following set of content in a div class="textbox". -->
+  <img style="padding: 20px"; height=300px; src="IMAGE\Zoe-Saldana.jpg" alt="Image of Zoe Saldana"; align="left";>
+        <!-- NOTE: The original images I found of the actors on the internet were different sizes & different aspect ratios. If I just inserted the images
+                  as they were, the images would be different shapes and sizes which would look very un professional. To fix this I inserted the Images
+                  into an image manipulation programme called photoshop and exported them to be 1565px x 2293px therefore making the images identicle size
+                  and aspect ratio.-->
+
+<h3>Zoe Saldana</h3>
+        <!-- NOTE: Again to remain consstent with the rest of the website, I used the h3 styling for cast member names. Doing this also helps to to emphasise
+                  it from the body of text and tell the audience what the section is about.-->
+  <p><b>Year of Birth:</b><br>1978 </p>
+  <p><b>From:</b><br>Passaic, New Jersey, US </p>
+  <p><b>Also Featured in:</b><br>Pirates of the Caribbean: The Curse of the Black Pearl, The Terminal, Star Trek, Avatar, Star Trek Into Darkness, Guardians of
+                                 the Galaxy, Star Trek Beyond, Guardians of the Galaxy Vol. 2, Avengers: Infinity War and Avengers: Endgame </p>
+  <audio controls>
+
+    <source src="AUDIO\zoe_saldana_interview.mp3" type="audio/mp3">
+    <source src="AUDIO\zoe_saldana_interview.ogg" type="audio/ogg">
+    <source src="AUDIO\zoe_saldana_interview.wav" type="audio/wav">
+        <!-- NOTE: Just coppied the code from above and changed the sources -->
+      Your browser does not support this audio clip.
+          <!-- NOTE: Because this is placed within the audio tags this will act as alt text in situations where outdated browsers can't play the audio. -->
+  </audio>
+          <!-- NOTE: Defines the end of the audio section -->
+
+  <p class="smalltext">
+
+    To listen to the full clip,
+          <!-- NOTE: because viewwers had the option to listen to chris's full clip, I provided the option for them to do the same with Zoe -->
+    <a href="https://www.youtube.com/watch?v=k7S--iuNALE" target="_blank" rel="noopener noreferrer">CLICK HERE</a></p>
+          <!-- NOTE: Just copied the code from above and changed the link -->
+</div>
+
+
+
+  </body>
+
+  <footer><p> <b>Website By: P2606861 :)</b> </p></footer>
+          <!-- NOTE: Normally a website footer contains a copyright notice, link to a privacy policy, sitemap, logo, contact information, social media icons.
+                    in this situation these are not aplicable but the breif stated that I needed a footer. Therfore I just did this to prove that I could
+                    add a footer -->
+
+</html>
